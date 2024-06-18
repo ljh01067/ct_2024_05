@@ -8,12 +8,12 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Tests {
     @Test
-    @DisplayName("23 => 5")
+    @DisplayName("10 => 4")
     void t12(){
         assertThat(new com.ki.level1.p12921.Solution().solution(10)).isEqualTo(4);
     }
     @Test
-    @DisplayName("24 => 6")
+    @DisplayName("5 => 3")
     void t22() {
         assertThat(new com.ki.level1.p12921.Solution().solution(5)).isEqualTo(3);
     }
