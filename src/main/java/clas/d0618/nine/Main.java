@@ -13,38 +13,41 @@ public class Main {
 
     }
 class 로봇{
-        int 정수;
-        boolean 논리;
-        public void get정수(int a){
-            this.정수 = a;
+        static int get정수(){
+            return 0;
         }
-        public void get논리(boolean b){
-            this.논리 = b;
+        static boolean get논리(){
+            return true;
         }
-        public void get사람(int a,boolean b){
-            System.out.println(a);
-            System.out.println(b);
+        static 사람 get사람(){
+            return null;
         }
-    public void get사람2(){
-        System.out.println(a);
-        System.out.println(b);
+    static 사람 get사람2(){
+        return new 사람();
     }
-    public void get사람3(){
-        System.out.println(a);
-        System.out.println(b);
+    static 사람 get사람3(){
+            사람 a사람 = null;
+            return a사람;
     }
-    public void get사람4(){
-        System.out.println(a);
-        System.out.println(b);
+    static 사람 get사람4(){
+        사람 a사람 = new 사람();
+        return a사람;
     }
-    public void get사람5(){
-        System.out.println(a);
-        System.out.println(b);
+    static 사람 get사람5(int a, boolean b) {
+        사람 a사람 = new 사람();
+        a사람.나이 = a;
+        a사람.기혼여부 = b;
+        return a사람;
     }
-    public void get사람6(){
-        System.out.println(a);
-        System.out.println(b);
+    static void get사람6(int a, boolean b){
+        사람 a사람 = new 사람();
+        a사람.나이 = a;
+        a사람.기혼여부 = b;
     }
+}
+static class 사람{
+int 나이;
+boolean 기혼여부;
 }
 
 }
